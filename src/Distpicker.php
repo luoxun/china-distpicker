@@ -98,7 +98,7 @@ $("#{$id}").distpicker({
   province: '$province',
   city: '$city',
   district: '$district'
-});
+});$('div[id*="distpicker-"]').distpicker();
 EOT;
 
         return parent::render()->with(compact('id'));
